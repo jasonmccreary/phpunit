@@ -22,7 +22,7 @@ $_FILES['g']   = 'g';
 $_REQUEST['h'] = 'h';
 $GLOBALS['i']  = 'i';
 
-class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
+class Framework_TestCaseTest extends \PHPUnit\Framework\TestCase
 {
     protected $backupGlobalsBlacklist = ['i', 'singleton'];
 
@@ -44,7 +44,7 @@ class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
         $test   = new Success;
         $result = $test->run();
 
-        $this->assertEquals(PHPUnit_Runner_BaseTestRunner::STATUS_PASSED, $test->getStatus());
+        $this->assertEquals(\PHPUnit\Runner\BaseTestRunner::STATUS_PASSED, $test->getStatus());
         $this->assertEquals(0, $result->errorCount());
         $this->assertEquals(0, $result->failureCount());
         $this->assertEquals(0, $result->skippedCount());
@@ -56,7 +56,7 @@ class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
         $test   = new Failure;
         $result = $test->run();
 
-        $this->assertEquals(PHPUnit_Runner_BaseTestRunner::STATUS_FAILURE, $test->getStatus());
+        $this->assertEquals(\PHPUnit\Runner\BaseTestRunner::STATUS_FAILURE, $test->getStatus());
         $this->assertEquals(0, $result->errorCount());
         $this->assertEquals(1, $result->failureCount());
         $this->assertEquals(0, $result->skippedCount());
@@ -68,7 +68,7 @@ class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
         $test   = new TestError;
         $result = $test->run();
 
-        $this->assertEquals(PHPUnit_Runner_BaseTestRunner::STATUS_ERROR, $test->getStatus());
+        $this->assertEquals(\PHPUnit\Runner\BaseTestRunner::STATUS_ERROR, $test->getStatus());
         $this->assertEquals(1, $result->errorCount());
         $this->assertEquals(0, $result->failureCount());
         $this->assertEquals(0, $result->skippedCount());
@@ -80,7 +80,7 @@ class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
         $test   = new TestSkipped();
         $result = $test->run();
 
-        $this->assertEquals(PHPUnit_Runner_BaseTestRunner::STATUS_SKIPPED, $test->getStatus());
+        $this->assertEquals(\PHPUnit\Runner\BaseTestRunner::STATUS_SKIPPED, $test->getStatus());
         $this->assertEquals('Skipped test', $test->getStatusMessage());
         $this->assertEquals(0, $result->errorCount());
         $this->assertEquals(0, $result->failureCount());
@@ -93,7 +93,7 @@ class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
         $test   = new TestIncomplete();
         $result = $test->run();
 
-        $this->assertEquals(PHPUnit_Runner_BaseTestRunner::STATUS_INCOMPLETE, $test->getStatus());
+        $this->assertEquals(\PHPUnit\Runner\BaseTestRunner::STATUS_INCOMPLETE, $test->getStatus());
         $this->assertEquals('Incomplete test', $test->getStatusMessage());
         $this->assertEquals(0, $result->errorCount());
         $this->assertEquals(0, $result->failureCount());
@@ -163,8 +163,8 @@ class Framework_TestCaseTest extends PHPUnit_Framework_TestCase
 
     public function testNoArgTestCasePasses()
     {
-        $result = new PHPUnit_Framework_TestResult;
-        $t      = new PHPUnit_Framework_TestSuite('NoArgTestCaseTest');
+        $result = new \PHPUnit\Framework\TestResult;
+        $t      = new \PHPUnit\Framework\TestSuite('NoArgTestCaseTest');
 
         $t->run($result);
 

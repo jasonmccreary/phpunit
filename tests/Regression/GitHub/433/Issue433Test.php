@@ -1,5 +1,5 @@
 <?php
-class Issue433Test extends PHPUnit_Framework_TestCase
+class Issue433Test extends \PHPUnit\Framework\TestCase
 {
     public function testOutputWithExpectationBefore()
     {

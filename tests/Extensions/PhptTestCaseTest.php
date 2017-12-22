@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-class Extensions_PhptTestCaseTest extends \PHPUnit_Framework_TestCase
+class Extensions_PhptTestCaseTest extends \\PHPUnit\Framework\TestCase
 {
     const EXPECT_CONTENT = <<<EOF
 --TEST--
@@ -51,9 +51,9 @@ EOF;
         $this->filename = sys_get_temp_dir() . '/phpunit.phpt';
         touch($this->filename);
 
-        $this->phpUtil = $this->getMockForAbstractClass('PHPUnit_Util_PHP', [], '', false);
+        $this->phpUtil = $this->getMockForAbstractClass('\PHPUnit\Util\PHP', [], '', false);
 
-        $this->testCase = new PHPUnit_Extensions_PhptTestCase($this->filename, $this->phpUtil);
+        $this->testCase = new \PHPUnit\Extensions\PhptTestCase($this->filename, $this->phpUtil);
     }
 
     protected function tearDown()
@@ -146,7 +146,7 @@ EOF;
     }
 
     /**
-     * @expectedException PHPUnit_Framework_Exception
+     * @expectedException \PHPUnit\Framework\Exception
      * @expectedExceptionMessage Invalid PHPT file
      */
     public function testShouldThrowsAnExceptionWhenPhptFileIsEmpty()
@@ -157,7 +157,7 @@ EOF;
     }
 
     /**
-     * @expectedException PHPUnit_Framework_Exception
+     * @expectedException \PHPUnit\Framework\Exception
      * @expectedExceptionMessage Invalid PHPT file
      */
     public function testShouldThrowsAnExceptionWhenFileSectionIsMissing()
@@ -174,7 +174,7 @@ EOF
     }
 
     /**
-     * @expectedException PHPUnit_Framework_Exception
+     * @expectedException \PHPUnit\Framework\Exception
      * @expectedExceptionMessage Invalid PHPT file
      */
     public function testShouldThrowsAnExceptionWhenThereIsNoExpecOrExpectifOrExpecregexSectionInPhptFile()
@@ -254,7 +254,7 @@ EOF
     }
 }
 
-class PhpTestCaseProxy extends PHPUnit_Extensions_PhptTestCase
+class PhpTestCaseProxy extends \PHPUnit\Extensions\PhptTestCase
 {
     public function parseIniSection($content)
     {
