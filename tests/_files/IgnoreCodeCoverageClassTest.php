@@ -1,5 +1,5 @@
 <?php
-class IgnoreCodeCoverageClassTest extends PHPUnit_Framework_TestCase
+class IgnoreCodeCoverageClassTest extends \PHPUnit\Framework\TestCase
 {
     public function testReturnTrue()
     {

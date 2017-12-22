@@ -1,5 +1,5 @@
 <?php
-class CoverageNotProtectedTest extends PHPUnit_Framework_TestCase
+class CoverageNotProtectedTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @covers CoveredClass::<!protected>

@@ -1,5 +1,5 @@
 <?php
-class CoverageFunctionParenthesesTest extends PHPUnit_Framework_TestCase
+class CoverageFunctionParenthesesTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @covers ::globalFunction()
