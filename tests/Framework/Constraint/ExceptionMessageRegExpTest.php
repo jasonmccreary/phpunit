@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-class ExceptionMessageRegExpTest extends PHPUnit_Framework_TestCase
+class ExceptionMessageRegExpTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @expectedException \Exception

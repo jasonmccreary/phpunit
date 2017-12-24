@@ -1,5 +1,5 @@
 <?php
-class NotPublicTestCase extends PHPUnit_Framework_TestCase
+class NotPublicTestCase extends \PHPUnit\Framework\TestCase
 {
     public function testPublic()
     {
