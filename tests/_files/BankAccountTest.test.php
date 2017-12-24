@@ -12,7 +12,7 @@
  * Tests for the BankAccount class.
  *
  */
-class BankAccountWithCustomExtensionTest extends PHPUnit_Framework_TestCase
+class BankAccountWithCustomExtensionTest extends \PHPUnit\Framework\TestCase
 {
     protected $ba;
 

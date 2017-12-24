@@ -1,5 +1,5 @@
 <?php
-class Issue1471Test extends PHPUnit_Framework_TestCase
+class Issue1471Test extends \PHPUnit\Framework\TestCase
 {
     public function testFailure()
     {

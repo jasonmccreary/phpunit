@@ -3,7 +3,7 @@
 /**
  * @group
  */
-class Issue2435Test extends PHPUnit_Framework_TestCase
+class Issue2435Test extends \PHPUnit\Framework\TestCase
 {
     public function testOne()
     {

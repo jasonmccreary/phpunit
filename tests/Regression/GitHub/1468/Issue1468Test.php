@@ -1,5 +1,5 @@
 <?php
-class Issue1468Test extends PHPUnit_Framework_TestCase
+class Issue1468Test extends \PHPUnit\Framework\TestCase
 {
     /**
      * @todo Implement this test
