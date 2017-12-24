@@ -2,7 +2,7 @@
 /**
  * @requires extension I_DO_NOT_EXIST
  */
-class Issue1374Test extends PHPUnit_Framework_TestCase
+class Issue1374Test extends \PHPUnit\Framework\TestCase
 {
     protected function setUp()
     {

@@ -3,7 +3,7 @@
 /**
  * @requires extension nonExistingExtension
  */
-class RequirementsClassBeforeClassHookTest extends PHPUnit_Framework_TestCase
+class RequirementsClassBeforeClassHookTest extends \PHPUnit\Framework\TestCase
 {
     public static function setUpBeforeClass()
     {

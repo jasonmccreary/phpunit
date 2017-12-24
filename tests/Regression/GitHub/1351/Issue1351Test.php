@@ -1,5 +1,5 @@
 <?php
-class Issue1351Test extends PHPUnit_Framework_TestCase
+class Issue1351Test extends \PHPUnit\Framework\TestCase
 {
     protected $instance;
 

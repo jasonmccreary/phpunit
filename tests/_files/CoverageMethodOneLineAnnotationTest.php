@@ -1,6 +1,6 @@
 <?php
 
-class CoverageMethodOneLineAnnotationTest extends PHPUnit_Framework_TestCase
+class CoverageMethodOneLineAnnotationTest extends \PHPUnit\Framework\TestCase
 {
     /** @covers CoveredClass::publicMethod */
     public function testSomething()
