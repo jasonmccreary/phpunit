@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-class PHPUnit_Framework_Constraint_ArraySubsetTest extends PHPUnit_Framework_TestCase
+class PHPUnit_Framework_Constraint_ArraySubsetTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @param bool              $expected
@@ -19,7 +19,7 @@ class PHPUnit_Framework_Constraint_ArraySubsetTest extends PHPUnit_Framework_Tes
      */
     public function testEvaluate($expected, $subset, $other, $strict)
     {
-        $constraint = new PHPUnit_Framework_Constraint_ArraySubset($subset, $strict);
+        $constraint = new \PHPUnit\Framework\Constraint\ArraySubset($subset, $strict);
 
         $this->assertSame($expected, $constraint->evaluate($other, '', true));
     }
@@ -58,7 +58,7 @@ class PHPUnit_Framework_Constraint_ArraySubsetTest extends PHPUnit_Framework_Tes
     {
         $arrayAccess = new ArrayAccessible(['foo' => 'bar']);
 
-        $constraint = new PHPUnit_Framework_Constraint_ArraySubset(['foo' => 'bar']);
+        $constraint = new \PHPUnit\Framework\Constraint\ArraySubset(['foo' => 'bar']);
 
         $this->assertTrue($constraint->evaluate($arrayAccess, '', true));
     }

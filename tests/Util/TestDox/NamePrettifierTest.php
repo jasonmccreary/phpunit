@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-class Util_TestDox_NamePrettifierTest extends PHPUnit_Framework_TestCase
+class Util_TestDox_NamePrettifierTest extends \PHPUnit\Framework\TestCase
 {
     protected $namePrettifier;
 
     protected function setUp()
     {
-        $this->namePrettifier = new PHPUnit_Util_TestDox_NamePrettifier;
+        $this->namePrettifier = new \PHPUnit\Util\TestDox\NamePrettifier;
     }
 
     public function testTitleHasSensibleDefaults()

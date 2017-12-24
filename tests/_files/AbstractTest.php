@@ -1,5 +1,5 @@
 <?php
-abstract class AbstractTest extends PHPUnit_Framework_TestCase
+abstract class AbstractTest extends \PHPUnit\Framework\TestCase
 {
     public function testOne()
     {

@@ -1,5 +1,5 @@
 <?php
-class NamespaceCoverageNotPublicTest extends PHPUnit_Framework_TestCase
+class NamespaceCoverageNotPublicTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @covers Foo\CoveredClass::<!public>

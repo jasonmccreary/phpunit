@@ -8,16 +8,16 @@
  * file that was distributed with this source code.
  */
 
-class Framework_BaseTestListenerTest extends PHPUnit_Framework_TestCase
+class Framework_BaseTestListenerTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var PHPUnit_Framework_TestResult
+     * @var \PHPUnit\Framework\TestResult
      */
     private $result;
 
     public function testEndEventsAreCounted()
     {
-        $this->result = new PHPUnit_Framework_TestResult;
+        $this->result = new \PHPUnit\Framework\TestResult;
         $listener     = new BaseTestListenerSample();
         $this->result->addListener($listener);
         $test = new Success;

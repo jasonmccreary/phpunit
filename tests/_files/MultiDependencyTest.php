@@ -1,5 +1,5 @@
 <?php
-class MultiDependencyTest extends PHPUnit_Framework_TestCase
+class MultiDependencyTest extends \PHPUnit\Framework\TestCase
 {
     public function testOne()
     {
