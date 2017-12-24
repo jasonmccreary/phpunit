@@ -1,6 +1,6 @@
 <?php
 
-class TestDoxGroupTest extends PHPUnit_Framework_TestCase
+class TestDoxGroupTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @group one
