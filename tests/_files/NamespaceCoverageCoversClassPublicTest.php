@@ -2,7 +2,7 @@
 /**
  * @coversDefaultClass \Foo\CoveredClass
  */
-class NamespaceCoverageCoversClassPublicTest extends PHPUnit_Framework_TestCase
+class NamespaceCoverageCoversClassPublicTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @covers ::publicMethod

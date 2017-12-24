@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-class Util_RegexTest extends PHPUnit_Framework_TestCase
+class Util_RegexTest extends \PHPUnit\Framework\TestCase
 {
     public function validRegexpProvider()
     {
@@ -34,7 +34,7 @@ class Util_RegexTest extends PHPUnit_Framework_TestCase
      */
     public function testValidRegex($pattern, $subject, $return)
     {
-        $this->assertEquals($return, PHPUnit_Util_Regex::pregMatchSafe($pattern, $subject));
+        $this->assertEquals($return, \PHPUnit\Util\Regex::pregMatchSafe($pattern, $subject));
     }
 
     /**
@@ -42,6 +42,6 @@ class Util_RegexTest extends PHPUnit_Framework_TestCase
      */
     public function testInvalidRegex($pattern, $subject)
     {
-        $this->assertFalse(PHPUnit_Util_Regex::pregMatchSafe($pattern, $subject));
+        $this->assertFalse(\PHPUnit\Util\Regex::pregMatchSafe($pattern, $subject));
     }
 }
