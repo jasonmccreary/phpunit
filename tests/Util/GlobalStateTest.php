@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-class Util_GlobalStateTest extends PHPUnit_Framework_TestCase
+class Util_GlobalStateTest extends \PHPUnit\Framework\TestCase
 {
     public function testIncludedFilesAsStringSkipsVfsProtocols()
     {
@@ -25,6 +25,6 @@ class Util_GlobalStateTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(
             "require_once '" . $dir . "/ConfigurationTest.php';\n" .
             "require_once '" . $dir . "/GlobalStateTest.php';\n" .
-            "require_once 'file://" . $dir . "/XMLTest.php';\n", PHPUnit_Util_GlobalState::processIncludedFilesAsString($files));
+            "require_once 'file://" . $dir . "/XMLTest.php';\n", \PHPUnit\Util\GlobalState::processIncludedFilesAsString($files));
     }
 }

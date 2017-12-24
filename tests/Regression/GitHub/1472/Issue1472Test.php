@@ -1,5 +1,5 @@
 <?php
-class Issue1472Test extends PHPUnit_Framework_TestCase
+class Issue1472Test extends \PHPUnit\Framework\TestCase
 {
     public function testAssertEqualXMLStructure()
     {

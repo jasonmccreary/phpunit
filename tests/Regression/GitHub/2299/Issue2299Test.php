@@ -2,7 +2,7 @@
 /**
  * @author Jean Carlo Machado <contato@jeancarlomachado.com.br>
  */
-class Test extends PHPUnit_Framework_TestCase
+class Test extends \PHPUnit\Framework\TestCase
 {
     public function testOne()
     {

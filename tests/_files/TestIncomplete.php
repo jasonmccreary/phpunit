@@ -1,5 +1,5 @@
 <?php
-class TestIncomplete extends PHPUnit_Framework_TestCase
+class TestIncomplete extends \PHPUnit\Framework\TestCase
 {
     protected function runTest()
     {

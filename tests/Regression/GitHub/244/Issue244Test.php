@@ -1,5 +1,5 @@
 <?php
-class Issue244Test extends PHPUnit_Framework_TestCase
+class Issue244Test extends \PHPUnit\Framework\TestCase
 {
     /**
      * @expectedException Issue244Exception

@@ -1,5 +1,5 @@
 <?php
-class StopsOnWarningTest extends PHPUnit_Framework_TestCase
+class StopsOnWarningTest extends \PHPUnit\Framework\TestCase
 {
     public function testOne()
     {
