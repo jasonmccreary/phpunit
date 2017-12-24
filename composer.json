@@ -65,8 +65,8 @@
         "phpunit"
     ],
     "autoload": {
-        "psr-0": {
-            "PHPUnit\\" : "src/"
+        "psr-4": {
+            "PHPUnit\\": "src/"
         }
     },
     "autoload-dev": {

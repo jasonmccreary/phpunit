@@ -1,6 +1,6 @@
 <?php
 
-class InheritanceB extends PHPUnit_Framework_TestCase
+class InheritanceB extends \PHPUnit\Framework\TestCase
 {
     public function testSomething()
     {

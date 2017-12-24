@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-class Framework_TestImplementorTest extends PHPUnit_Framework_TestCase
+class Framework_TestImplementorTest extends \PHPUnit\Framework\TestCase
 {
     public function testSuccessfulRun()
     {
-        $result = new PHPUnit_Framework_TestResult;
+        $result = new \PHPUnit\Framework\TestResult;
 
         $test = new DoubleTestCase(new Success);
         $test->run($result);

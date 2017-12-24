@@ -1,5 +1,5 @@
 <?php
-class CoverageNoneTest extends PHPUnit_Framework_TestCase
+class CoverageNoneTest extends \PHPUnit\Framework\TestCase
 {
     public function testSomething()
     {

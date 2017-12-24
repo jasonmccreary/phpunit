@@ -1,6 +1,6 @@
 <?php
 
-class MyCommand extends PHPUnit_TextUI_Command
+class MyCommand extends \PHPUnit\TextUI\Command
 {
     public function __construct()
     {

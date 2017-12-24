@@ -3,7 +3,7 @@
  * @runTestsInSeparateProcesses
  * @preserveGlobalState enabled
  */
-class Issue1335Test extends PHPUnit_Framework_TestCase
+class Issue1335Test extends \PHPUnit\Framework\TestCase
 {
     public function testGlobalString()
     {
